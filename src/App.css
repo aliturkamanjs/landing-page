@@ -1,9 +1,27 @@
-body,
-html,
-#root {
-  width: 100%;
-  height: 100vh;
-  background-image: url(/src/images/background.jpeg);
-  background-repeat: no-repeat;
+.right-box{
+  background-image: url(/src/images/bg.jpeg);
+  background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
+}
+.blur-left{
+  width: 350px;
+  height: 350px;
+  background: #0077ff7e;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(220px);
+  bottom: 0;
+  left: 0;
+}
+
+.blur-right{
+  width: 400px;
+  height: 400px;
+  background: #fa00ff;
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(220px);
+  right: 0;
+  top: 0;
 }
