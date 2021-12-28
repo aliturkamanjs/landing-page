@@ -1,7 +1,7 @@
 import ButtonComponent from "./components/buttonComponent";
 import LogoComponent from "./components/logo";
 import { FC, useEffect, useState } from "react";
-import { Container, Heading, Text } from "@chakra-ui/layout";
+import { Container, Text } from "@chakra-ui/layout";
 import { Flex } from "@chakra-ui/react";
 import { Box } from "@chakra-ui/react";
 import { motion } from "framer-motion";
@@ -51,22 +51,23 @@ const App: FC = () => {
             ml={["4", "4", "4", "8", "28"]}
             flexDir="column"
           >
-            <Heading
+            <Text
               mt="6"
-              fontFamily="Aquire"
+              className="aquire"
               fontSize={["sm", "md", "md", "md", "md"]}
               color="#f8fafd"
             >
               MOLTYCODE
-            </Heading>
-            <Heading color="#f8fafd" fontFamily="Aquire" mt="20" size="2xl">
+            </Text>
+            <Text fontSize={["30px","35px","40px","40px","40px"]} fontWeight="bold" color="#f8fafd" className="aquire" mt="20">
               social medias
-            </Heading>
+            </Text>
             <Text
               w={["250px", "400px", "400px", "400px", "400px"]}
               color="gray.200"
               fontSize="15px"
               mt="2"
+              className="raleway"
             >
               we are frontend developer and teach about frontend technologies.
             </Text>
@@ -76,7 +77,7 @@ const App: FC = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
             width="100%"
-            mt="-40"
+            mt={["-20","-40","-40","-40","-40"]}
             alignItems="center"
             flexDir="column"
           >
@@ -99,6 +100,7 @@ const App: FC = () => {
             mb="3"
             ml={["4", "4", "4", "8", "28"]}
             fontSize="12px"
+            className="raleway"
           >
             © MoltyCode team
           </MotionText>

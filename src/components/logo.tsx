@@ -25,7 +25,7 @@ const LogoComponent: FC<logocomp> = (props) => {
         transition={{ delay: 0.4 }}
         fontSize={["40px", "60px", "60px", "60px", "60px"]}
         color="#f8fafd"
-        fontFamily="Aquire"
+        className="aquire"
       >
         moltycode
       </MotionText>
