@@ -8,15 +8,15 @@ import { motion } from "framer-motion";
 import "./App.css";
 
 const items = [
-  { name: "GITHUB", id: 1, href: "https://github.com/MoltyCode" },
+  { name: "GITHUB", href: "https://github.com/MoltyCode", id: 1 },
   {
     name: "YOUTUBE",
     id: 2,
     href: "https://www.youtube.com/channel/UC_xSsrvz8GTxQ7Ykj7XQ35w",
   },
-  { name: "TELEGRAM", id: 3, href: "https://telegram.me/moltycode" },
-  { name: "INSTAGRAM", id: 4, href: "https://www.instagram.com/moltycode/" },
-  { name: "DISCORD", id: 5, href: "https://discord.gg/AptKJeUC" },
+  { name: "TELEGRAM", href: "https://telegram.me/moltycode", id: 3 },
+  { name: "INSTAGRAM", href: "https://www.instagram.com/moltycode/", id: 4 },
+  { name: "DISCORD", href: "https://discord.gg/AptKJeUC", id: 5 },
 ];
 
 const App: FC = () => {
@@ -43,7 +43,6 @@ const App: FC = () => {
           justifyContent="space-between"
         >
           <div className="blur-left"></div>
-
           <MotionTop
             initial={{ opacity: 0, y: -300 }}
             animate={{ opacity: 1, y: 0 }}
@@ -59,7 +58,13 @@ const App: FC = () => {
             >
               MOLTYCODE
             </Text>
-            <Text fontSize={["30px","35px","40px","40px","40px"]} fontWeight="bold" color="#f8fafd" className="aquire" mt="20">
+            <Text
+              fontSize={["30px", "35px", "40px", "40px", "40px"]}
+              fontWeight="bold"
+              color="#f8fafd"
+              className="aquire"
+              mt="20"
+            >
               social medias
             </Text>
             <Text
@@ -77,7 +82,7 @@ const App: FC = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
             width="100%"
-            mt={["-20","-40","-40","-40","-40"]}
+            mt={["-20", "-40", "-40", "-40", "-40"]}
             alignItems="center"
             flexDir="column"
           >
@@ -106,9 +111,9 @@ const App: FC = () => {
           </MotionText>
         </Flex>
         <Box
+          flex={1}
           display={["none", "none", "none", "block", "block"]}
           className="right-box"
-          flex={1}
         >
           <div className="blur-right"></div>
         </Box>

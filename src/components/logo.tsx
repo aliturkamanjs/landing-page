@@ -7,7 +7,6 @@ interface logocomp {
 }
 
 const LogoComponent: FC<logocomp> = (props) => {
-
   const MotionText = motion(Text);
   const MotionFlex = motion(Flex);
 
@@ -27,8 +26,8 @@ const LogoComponent: FC<logocomp> = (props) => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.4 }}
         fontSize={["40px", "60px", "60px", "60px", "60px"]}
-        color="#f8fafd"
         className="aquire"
+        color="#f8fafd"
       >
         moltycode
       </MotionText>
