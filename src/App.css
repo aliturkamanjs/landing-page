@@ -53,17 +53,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: Raleway;
-  src: url("fonts/RalewayLight-m7nx.ttf");
-  font-weight: normal;
-  font-style: normal;
-}
-
 .aquire {
   font-family: Aquire;
-}
-
-.raleway {
-  font-family: Raleway;
 }

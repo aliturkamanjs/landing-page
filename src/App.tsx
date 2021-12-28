@@ -72,7 +72,6 @@ const App: FC = () => {
               color="gray.200"
               fontSize="15px"
               mt="2"
-              className="raleway"
             >
               we are frontend developer and teach about frontend technologies.
             </Text>
@@ -105,7 +104,7 @@ const App: FC = () => {
             mb="3"
             ml={["4", "4", "4", "8", "28"]}
             fontSize="12px"
-            className="raleway"
+      
           >
             © MoltyCode team
           </MotionText>
