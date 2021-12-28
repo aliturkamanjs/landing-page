@@ -1,10 +1,11 @@
-.right-box{
+.right-box {
   background-image: url(/src/images/bg.jpeg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
-.blur-left{
+
+.blur-left {
   width: 350px;
   height: 350px;
   background: #0077ff7e;
@@ -15,7 +16,7 @@
   left: 0;
 }
 
-.blur-right{
+.blur-right {
   width: 400px;
   height: 400px;
   background: #fa00ff;
@@ -24,4 +25,23 @@
   filter: blur(220px);
   right: 0;
   top: 0;
+}
+
+.hover-button{
+  transition: .4s ease-in-out;
+}
+
+.hover-button:hover{
+  background: linear-gradient(35deg, #00C2FF, #FA00FF );
+  filter: hue-rotate(120deg);
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(2000deg);
+  }
 }

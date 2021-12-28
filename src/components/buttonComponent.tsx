@@ -1,6 +1,6 @@
-import { Button } from "@chakra-ui/button";
-import { Box, Link } from "@chakra-ui/layout";
 import { FC } from "react";
+import { Box, Link } from "@chakra-ui/layout";
+import { Button } from "@chakra-ui/button";
 
 interface ButtonProps {
   name: string;
@@ -11,12 +11,11 @@ const ButtonComponent: FC<ButtonProps> = (props): JSX.Element => {
     <Link href={props.href} isExternal _hover={{ textDecoration: "none" }}>
       <Box
         mt="5"
-        _hover={{ bg: "linear-gradient(35deg, #ffc400, #7a037c)" }}
         rounded="4"
         p="2px"
         bg="linear-gradient(35deg, #00C2FF, #FA00FF)"
-        w="400px"
-        
+        w={["280px","280px","400px","400px","400px"]}
+        className="hover-button"
       >
         <Button
           _active={{}}
