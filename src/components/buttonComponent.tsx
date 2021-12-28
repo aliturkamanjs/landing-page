@@ -24,6 +24,7 @@ const ButtonComponent: FC<ButtonProps> = (props): JSX.Element => {
           rounded="4"
           w="full"
           bg="#131313"
+            color="#f8fafd"
           _hover={{}}
           zIndex="10"
         >

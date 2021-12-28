@@ -40,7 +40,6 @@ const App: FC = () => {
           flex={1}
           flexDir="column"
           style={{ backdropFilter: "blur(20px)" }}
-          color="#f8fafd"
           justifyContent="space-between"
         >
           <div className="blur-left"></div>
@@ -56,10 +55,11 @@ const App: FC = () => {
               mt="6"
               fontFamily="Aquire"
               fontSize={["sm", "md", "md", "md", "md"]}
+              color="#f8fafd"
             >
               MOLTYCODE
             </Heading>
-            <Heading fontFamily="Aquire" mt="20" size="2xl">
+            <Heading color="#f8fafd" fontFamily="Aquire" mt="20" size="2xl">
               social medias
             </Heading>
             <Text
