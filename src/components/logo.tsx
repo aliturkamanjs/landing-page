@@ -1,6 +1,6 @@
 import { FC } from "react";
-import { Flex, Text } from "@chakra-ui/layout";
 import { motion } from "framer-motion";
+import { Flex, Text } from "@chakra-ui/layout";
 
 interface logocomp {
   showLogo: boolean;

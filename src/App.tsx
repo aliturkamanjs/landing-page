@@ -1,10 +1,10 @@
 import ButtonComponent from "./components/buttonComponent";
 import LogoComponent from "./components/logo";
-import { FC, useEffect, useState } from "react";
 import { Container, Text } from "@chakra-ui/layout";
+import { FC, useEffect, useState } from "react";
 import { Flex } from "@chakra-ui/react";
-import { Box } from "@chakra-ui/react";
 import { motion } from "framer-motion";
+import { Box } from "@chakra-ui/react";
 import "./App.css";
 
 const items = [
@@ -28,18 +28,18 @@ const App: FC = () => {
   }, []);
 
   const MotionTop = motion(Flex);
-  const MotionText = motion(Text);
   const MotionFlex = motion(Flex);
+  const MotionText = motion(Text);
 
   return (
     <Container maxW="container.3xl" p="0px">
       <LogoComponent showLogo={showLogo} />
       <Flex h="100vh" display={showLogo ? "none" : "flex"}>
         <Flex
-          bg="#0000005c"
-          flex={1}
-          flexDir="column"
           style={{ backdropFilter: "blur(20px)" }}
+          flex={1}
+          bg="#0000005c"
+          flexDir="column"
           justifyContent="space-between"
         >
           <div className="blur-left"></div>
@@ -51,18 +51,18 @@ const App: FC = () => {
             flexDir="column"
           >
             <Text
-              mt="6"
               className="aquire"
+              mt="6"
               fontSize={["sm", "md", "md", "md", "md"]}
               color="#f8fafd"
             >
               MOLTYCODE
             </Text>
             <Text
+              className="aquire"
               fontSize={["30px", "35px", "40px", "40px", "40px"]}
               fontWeight="bold"
               color="#f8fafd"
-              className="aquire"
               mt="20"
             >
               social medias
@@ -73,7 +73,7 @@ const App: FC = () => {
               fontSize="15px"
               mt="2"
             >
-              we are frontend developer and teach about frontend technologies.
+              We are frontend developer and teach about frontend technologies.
             </Text>
           </MotionTop>
           <MotionFlex
@@ -81,16 +81,15 @@ const App: FC = () => {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
             width="100%"
-            mt={["-20", "-40", "-40", "-40", "-40"]}
             alignItems="center"
             flexDir="column"
           >
             {items.map((item) => {
               return (
                 <ButtonComponent
-                  href={item.href}
                   key={item.id}
                   name={item.name}
+                  href={item.href}
                 />
               );
             })}
@@ -104,15 +103,14 @@ const App: FC = () => {
             mb="3"
             ml={["4", "4", "4", "8", "28"]}
             fontSize="12px"
-      
           >
             © MoltyCode team
           </MotionText>
         </Flex>
         <Box
           flex={1}
-          display={["none", "none", "none", "block", "block"]}
           className="right-box"
+          display={["none", "none", "none", "block", "block"]}
         >
           <div className="blur-right"></div>
         </Box>
