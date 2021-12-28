@@ -6,7 +6,9 @@ interface ButtonProps {
   name: string;
   href: string;
 }
+
 const ButtonComponent: FC<ButtonProps> = (props): JSX.Element => {
+  
   return (
     <Link href={props.href} isExternal _hover={{ textDecoration: "none" }}>
       <Box

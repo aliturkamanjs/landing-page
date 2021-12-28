@@ -5,9 +5,12 @@ import { motion } from "framer-motion";
 interface logocomp {
   showLogo: boolean;
 }
+
 const LogoComponent: FC<logocomp> = (props) => {
+
   const MotionText = motion(Text);
   const MotionFlex = motion(Flex);
+
   return (
     <MotionFlex
       display={props.showLogo ? "flex" : "none"}
